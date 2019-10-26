@@ -1,15 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Item from './Item';
 
-class Items extends Component {
-    render() {
-        return (
-            <div>
-                Items component working!
-                <Item />
-            </div>
-        );
-    }
-}
+const Items = (props) => {
+    return (
+        <div>
+            <Item valueText={props.value} />
+            {/* {
+                props.value.map((value) => {
+                    <Item 
+                        key={value}
+                        valueText={value}
+                    />
+                })
+            } */}
+        </div>
+    );
+};
 
 export default Items;

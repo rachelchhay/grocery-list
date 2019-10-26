@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Item extends Component {
-    render() {
-        return (
-            <div>
-                Item component is working!
-            </div>
-        );
-    }
+const Item = (props) => {
+    return (
+        <div>
+            <p>{props.valueText}</p>
+
+        </div>
+    )
 }
 
 export default Item;

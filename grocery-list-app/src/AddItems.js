@@ -3,18 +3,25 @@ import Items from './Items';
 
 class AddItems extends Component {
     state = {
-        value: ''
+        value: '',
+        groceryList: []
     }
 
     handleChange = (event) => {
         this.setState({
             value: event.target.value
         });
+        console.log('Handle change');
     }
 
     handleSubmit = (event) => {
-        console.log('Value submitted: ' + this.state.value);
         event.preventDefault();
+
+        console.log('Value submitted: ' + this.state.value);
+        this.setState({
+            groceryList: this.state.groceryList.concat(this.state.value.trim()),
+            value: ''
+        });
     }
 
     render() {
@@ -27,7 +34,7 @@ class AddItems extends Component {
                     </label>
                     <input type="submit" value="Submit"/>
                 </form>
-                <Items />
+                <Items value={this.state.groceryList} />
             </div>
         );
     }
