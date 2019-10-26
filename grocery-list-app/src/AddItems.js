@@ -34,7 +34,7 @@ class AddItems extends Component {
                     </label>
                     <input type="submit" value="Submit"/>
                 </form>
-                <Items value={this.state.groceryList} />
+                <Items groceryList={this.state.groceryList} />
             </div>
         );
     }

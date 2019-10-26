@@ -3,8 +3,9 @@ import React from 'react';
 const Item = (props) => {
     return (
         <div>
-            <p>{props.valueText}</p>
-
+            <label>
+               <input type="checkbox" value={props.groceryListText}/> {props.groceryListText}
+            </label>
         </div>
     )
 }

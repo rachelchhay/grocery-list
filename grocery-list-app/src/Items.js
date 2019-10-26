@@ -4,15 +4,14 @@ import Item from './Item';
 const Items = (props) => {
     return (
         <div>
-            <Item valueText={props.value} />
-            {/* {
-                props.value.map((value) => {
+            {
+                props.groceryList.map((item, i) => (
                     <Item 
-                        key={value}
-                        valueText={value}
+                        key={i}
+                        groceryListText={item}
                     />
-                })
-            } */}
+                ))
+            }
         </div>
     );
 };
