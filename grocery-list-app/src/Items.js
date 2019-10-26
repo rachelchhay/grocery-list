@@ -9,6 +9,7 @@ const Items = (props) => {
                     <Item 
                         key={i}
                         groceryListText={item}
+                        handleDelete={props.handleDelete}
                     />
                 ))
             }

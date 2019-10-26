@@ -24,6 +24,15 @@ class AddItems extends Component {
         });
     }
 
+    handleDelete = (item) => {
+        console.log('Item being deleted:', item);
+        const groceryList = this.state.groceryList.filter(groceryListItem => item !== groceryListItem);
+        this.setState({
+            groceryList: groceryList
+            // You don't have to include the second groceryList because they're the same name
+        });
+    }
+
     render() {
         return (
             <div>
@@ -34,7 +43,7 @@ class AddItems extends Component {
                     </label>
                     <input type="submit" value="Submit"/>
                 </form>
-                <Items groceryList={this.state.groceryList} />
+                <Items groceryList={this.state.groceryList} handleDelete={this.handleDelete} />
             </div>
         );
     }

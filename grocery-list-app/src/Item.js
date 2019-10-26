@@ -6,6 +6,12 @@ const Item = (props) => {
             <label>
                <input type="checkbox" value={props.groceryListText}/> {props.groceryListText}
             </label>
+            
+            <button onClick={() => {
+                props.handleDelete(props.groceryListText)
+            }}>
+                Delete
+            </button>
         </div>
     )
 }
