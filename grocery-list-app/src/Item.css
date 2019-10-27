@@ -5,3 +5,9 @@
 .Item button {
     margin: 0 5px;
 }
+
+.Item label {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-weight: 600;
+    font-size: 20px;
+}

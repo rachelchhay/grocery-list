@@ -1,3 +1,13 @@
-.GroceryList input {
+.GroceryListInput {
     margin: 0 5px;
+    height: 20px;
+    width: 170px;
+    vertical-align: middle;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.GroceryListLabel {
+    font-size: 25px;
+    vertical-align: middle;
 }

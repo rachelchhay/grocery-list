@@ -38,9 +38,9 @@ class AddItems extends Component {
         return (
             <div className="GroceryList">
                 <form onSubmit={this.handleSubmit}>
-                    <label>
+                    <label className="GroceryListLabel">
                         Grocery Item: 
-                        <input type="text" value={this.state.value} onChange={this.handleChange}/>
+                        <input className="GroceryListInput" type="text" value={this.state.value} onChange={this.handleChange}/>
                     </label>
                     <input type="submit" value="Submit"/>
                 </form>
