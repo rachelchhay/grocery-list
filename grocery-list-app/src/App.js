@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1>Grocery List</h1>
+      <img src="./image/apple.png" alt=""/>
       <GroceryList />
     </div>
   );

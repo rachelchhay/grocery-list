@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Items from './Items';
+import './GroceryList.css';
 
 class AddItems extends Component {
     state = {
@@ -35,7 +36,7 @@ class AddItems extends Component {
 
     render() {
         return (
-            <div>
+            <div className="GroceryList">
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         Grocery Item: 
