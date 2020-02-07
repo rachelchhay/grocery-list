@@ -1,2 +1,2 @@
 # grocery-list
-Framework: React
+Library: React
